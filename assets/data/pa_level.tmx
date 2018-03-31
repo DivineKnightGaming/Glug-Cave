@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="34" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="pa_tiles" tilewidth="16" tileheight="16">
+  <image source="pa_tiles.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="5" name="tileset" tilewidth="16" tileheight="16">
+  <image source="tileset.png" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="13" name="water" tilewidth="16" tileheight="16">
+  <image source="water.png" width="48" height="48"/>
+ </tileset>
+ <layer name="floor" width="30" height="34">
+  <properties>
+   <property name="nocollide" value="true"/>
+   <property name="tileset" value="tileset"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJyF1kuSAyEMA9De8Ln/iSeLpEr1ImcWVGgwBtuSnPU8z3mN9Rr7/Xvfazv2znt9x/yUMx/7z9rnzGXtxPqJvR1+TpzLOy77B98f+83dJ2x8Q/76zvSbdsbr2i2/m3nm07l3bfx51wm79L1Y00fOW4z3+c6/b7xPz8vlbs+Yv8zjKra32ORZ48/aip09fK8ybzhpmDF3rlurlrNf/sTj5TvtWt6t78V24vVlpL/Go1yTk4k/ayPW5dJ6vmNZjBb3Kfe0nByGcTfOGGPDcPOvri32Wy5cz3qYr80d8r+98fyYT7EZgxoqps7w2zCW9zV+Tlrkm8yxGBRP3tf6ie9KP4s7rJ2aYI4bxhpv1LzGx/SphprzhvOmg9MbM4YWS4u39QVzam7EXatF097MkXtyv+mXe+qttuZMnNjf2h353Xpl0+3WZ1rc9m2xm/ZiutXiF3+S42rQVIPL/tTTmk42zNo3cy6P1Kgz2LZ+2DSm+d/4VXvVXW0mfDS9aTxV98RVw+j0DnW3cTD54vuti2PSjBziQD1WO/NbzquvvlFutV6WdZBDre+oX/5faXp3ftiqea0Pq3Ot7/vOphntjNouB5tGNz5MHBA/9gn1qmFkwpw8UYsmfVI37X+ek5PtLWraf7XMGmYO/wBltRnO
+  </data>
+ </layer>
+ <layer name="water" width="30" height="34">
+  <properties>
+   <property name="nocollide" value="true"/>
+   <property name="tileset" value="water"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzTEOABAQAMH7AOH/n0WiEL3TzCRbbwQAAAC8V2b1w7Pvsn71eGZ92/VcDY/0AO0=
+  </data>
+ </layer>
+ <layer name="walls" width="30" height="34">
+  <properties>
+   <property name="collide" value="true"/>
+   <property name="tileset" value="tileset"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJyNlUEOxDAIA7k2/39wT5Ws0Zg00mpTSogxhp6ZeeJ3yjPtn+2v/5F9rvTl88HvkfPf+ny4MtYUn4HPth7803awz3stx8zp5k+fERtjEmvLye76YqffwTt7z1pTMwM/PrPWph3juuXFe5pWEgcxbTXmOd6fvlZjasVs1l+8Y+PDcmj9ZHozjBmb++09NWPcEjf7jnZyx3iN9/Rrtj9nqRvjpPkxj8aDaZM+xsmE3WZzxv/bU9wb1oad8dqsa/VjD/Js49t8bU62b1abja2vDTtxNY63b1/7lrUZueltq6Hpy/jYdNZitRoSL2MmDuOf9bHcmQ8xbDq1OtJm34g247Z8LTerF3s6Y9k9puMWm/FbbJtPjN+4a7Pz1s+G296bjrZZaTo3XOy1pr2BH/uFWNsM/tPPG5dbv5FL6/GbprZ51+ztbrvXamX93OaC5c9lPc0cjb/Eyr1xtM0T7hNzw51rq1n63OoysM043xsmckb/jZ+8w86xrjZTGm82Dxu2NnONsxvvN4xbH5jOmta4XtrNF5o=
+  </data>
+ </layer>
+ <objectgroup name="player" width="0" height="0">
+  <object name="player" type="player" x="32" y="64" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup name="goal" width="0" height="0">
+  <object name="goal" type="goal" x="448" y="480" width="16" height="16">
+   <properties>
+    <property name="win_game" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="fireballs" width="0" height="0" visible="0">
+  <object name="fireball1" type="fireball" x="266" y="96" width="16" height="16"/>
+  <object name="fireball4" type="fireball" x="288" y="262" width="16" height="16"/>
+  <object name="fireball3" type="fireball" x="160" y="128" width="16" height="16"/>
+  <object name="fireball5" type="fireball" x="191" y="383" width="16" height="16"/>
+  <object name="fireball6" type="fireball" x="368" y="464" width="16" height="16"/>
+  <object name="fireball7" type="fireball" x="64" y="433" width="16" height="16"/>
+  <object name="fireball2" type="fireball" x="432" y="160" width="16" height="16"/>
+  <object name="fireball8" type="fireball" x="80" y="112" width="16" height="16"/>
+  <object name="fireball11" type="fireball" x="96" y="272" width="16" height="16"/>
+  <object name="fireball12" type="fireball" x="416" y="320" width="16" height="16"/>
+  <object name="fireball9" type="fireball" x="442" y="64" width="16" height="16"/>
+  <object name="fireball10" type="fireball" x="352" y="170" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup name="clods" width="0" height="0" visible="0">
+  <object name="clod1" type="clod" x="16" y="64" width="16" height="16"/>
+  <object name="clod3" type="clod" x="144" y="128" width="16" height="16"/>
+  <object name="clod5" type="clod" x="96" y="288" width="16" height="16"/>
+  <object name="clod4" type="clod" x="384" y="224" width="16" height="16"/>
+  <object name="clod2" type="clod" x="352" y="48" width="16" height="16"/>
+  <object name="clod6" type="clod" x="448" y="354" width="16" height="16"/>
+  <object name="clod7" type="clod" x="160" y="416" width="16" height="16"/>
+  <object name="clod8" type="clod" x="192" y="32" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup name="cracks" width="0" height="0" visible="0">
+  <object name="cracks1" type="cracks" x="64" y="48" width="16" height="16"/>
+  <object name="cracks2" type="cracks" x="224" y="32" width="16" height="16"/>
+  <object name="cracks4" type="cracks" x="112" y="160" width="16" height="16"/>
+  <object name="cracks5" type="cracks" x="240" y="160" width="16" height="16"/>
+  <object name="cracls6" type="cracks" x="336" y="128" width="16" height="16"/>
+  <object name="cracks7" type="cracks" x="432" y="176" width="16" height="16"/>
+  <object name="cracks9" type="cracks" x="400" y="320" width="16" height="16"/>
+  <object name="cracks3" type="cracks" x="432" y="32" width="16" height="16"/>
+  <object name="cracks11" type="cracks" x="32" y="400" width="16" height="16"/>
+  <object name="cracks12" type="cracks" x="96" y="480" width="16" height="16"/>
+  <object name="cracks8" type="cracks" x="208" y="272" width="16" height="16"/>
+  <object name="cracks10" type="cracks" x="320" y="352" width="16" height="16"/>
+  <object name="cracks13" type="cracks" x="224" y="464" width="16" height="16"/>
+  <object name="cracks14" type="cracks" x="352" y="464" width="16" height="16"/>
+ </objectgroup>
+</map>
